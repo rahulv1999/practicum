@@ -18,6 +18,7 @@ livereload==2.6.3
 MarkupSafe==1.1.1
 matplotlib==3.3.2
 mccabe==0.6.1
+mkl-service==2.3.0
 numpy==1.19.4
 olefile==0.46
 pandas==1.1.4
@@ -33,7 +34,7 @@ python-dateutil==2.8.1
 pytz==2020.4
 pyzmq==19.0.2
 scipy==1.5.2
-sip==4.19.13
+sip==4.19.1
 six==1.5.2
 toml==0.10.1
 tornado==6.0.4
