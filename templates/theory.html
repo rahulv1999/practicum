@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href={{ url_for('static', filename='style.css') }}>
+    <title>VLAB</title>
+
+</head>
+
+<body>
+    <div w3-include-HTML=/></div>
+    <script type="text/javascript" src={{ url_for('static', filename='w3-include-HTML.js') }}></script>
+    <div style="padding-top: 150px;">
+        <br><br><br>
+        <h1 style="text-align: center;padding-top: 0px;">DUFFING OSCILLATOR</h1>
+        <hr style="height: 1px;color: #000; opacity: 1;background-color: black;width:92%;">
+        <p id="nor">
+            The Duffing oscillator is one of the prototype systems of nonlinear dynamics. It first became popular for
+            studying anharmonic oscillations and, later, chaotic nonlinear dynamics in the wake of early studies by the
+            engineer Georg Duffing.
+        </p>
+        <p id="nor">
+            The duffing system has been successfully used to model a variety of physical processes such as stiffening
+            springs, beam buckling, nonlinear electronic circuits, superconducting Josephson parametric amplifiers, and
+            ionization waves in plasmas.
+        </p>
+        <p id="nor">
+            Nowadays, the term "Duffing equation" is used for any equation that describes an oscillator that has a cubic
+            stiffness term, regardless of the type of damping or excitation.
+        </p>
+        <p id="nor">
+            <img src="{{ url_for('static',filename='duff-removebg-preview.png') }}" alt="" style="padding-left: 450px;">
+        </p>
+        <p id="nor">
+             The above equation can display chaotic behaviour. For ω<sub>o</sub>²>0, the Duffing oscillator can be
+            interpreted as a
+            forced oscillator with a spring whose restoring force is written as F = - ω<sub>o</sub>²x - βx<sup>3</sup>.
+            When β>0,
+            this
+            equation represents a "hard spring," and for &nbsp;&nbsp; β < 0 ,it represents a "soft spring" . </p>
+
+                <p id="nor">
+                    For ω<sub>o</sub>² < 0 (so ω0 is pure imaginary), the Duffing oscillator describes the dynamics of a
+                        point mass in a double well potential, and it can be regarded as a model of a periodically
+                        forced steel beam which is deflected toward the two magnets. It is known that chaotic motions
+                        can be observed in this case. </p>
+                        <p id="nor">
+                            When there is no resistance proportional to the velocity (γ = 0), the Duffing equation can
+                            be integrated upon multiplication by the velocity:
+                        </p>
+                        <img src="{{ url_for('static',filename='duff2-removebg-preview.png') }}" alt="" style="padding-left: 400px;">
+                        <p id="nor">Integrating the above equation yields:</p>
+                        <img src="{{ url_for('static',filename='duff3-removebg-preview.png') }}" alt="" style="padding-left: 400px;">
+
+                        <p id="nor">
+                            The function in brackets given is called Hamiltonian for the duffing equation.
+                        </p>
+                        <img src="{{ url_for('static',filename='duff4-removebg-preview.png') }}" alt="" style="padding-left: 400px;">
+                        <p id="nor" style="padding-left: 300px;">Where, </p>
+                        <img src="{{ url_for('static',filename='duff-2-removebg-preview.png') }}" alt="" style="padding-left: 400px;">
+                        <p id="nor">The most general forced form of the Duffing equation is </p>
+                        <img src="{{ url_for('static',filename='duff-1-removebg-preview.png') }}" alt="" style="padding-left: 330px;">
+                        <p id="nor">The Duffing oscillator describes the motion of a classical particle in a double well
+                            potential</p>
+
+
+    </div>
+
+</body>
+
+</html>

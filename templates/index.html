@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href={{ url_for('static', filename='style.css') }}>
+    <title>VLAB</title>
+</head>
+
+<body>
+
+    <div style="background-image: url({{ url_for('static',filename='vlab.jpg') }});height: 190px;padding: 0;margin: 0;">
+        <img src="{{ url_for('static',filename='iitp-removebg-preview.png') }}" alt="" align="right"
+            style="height:175px;padding-top: 5px;margin-left: 5px;">
+
+    </div>
+    <div style="padding: 0;margin: 0;">
+        <hr allign="bottom" style="height: 3px;color: #000; opacity: 1;background-color: black;">
+    </div>
+
+    <div>
+        <h1 id="head" style="padding: 0;margin: 0;">DYNAMICS LAB</h1>
+    </div>
+    <div>
+        <nav>
+            <ul>
+                <li>
+                    <figure>
+                        <a href="/intro">
+                            <img src="{{ url_for('static',filename='introduction-removebg-preview.png') }}" alt="my img" style="height: 100px;" />
+                            <figcaption> INTRODUCTION </figcaption>
+                    </figure>
+                    </a>
+                </li>
+                <li><a href="/obj">
+                        <figure>
+                            <img src="{{ url_for('static',filename='sim-removebg-preview.png') }}" alt="my img" style="height: 100px;" />
+                            <figcaption> SIMULATIONS </figcaption>
+                        </figure>
+                    </a>
+
+                </li>
+                <li>
+                    <a href="/theory">
+                        <figure>
+                            <img src="{{ url_for('static',filename='theory.png') }}" alt="" style="height: 100px;">
+                            <figcaption style="padding-left: 20px;">THEORY </figcaption>
+                        </figure>
+                    </a>
+
+                </li>
+                <li>
+                    <a href="/proc">
+                        <figure>
+                            <img src="{{ url_for('static',filename='procedure.png') }}" alt="" style="height: 100px;">
+                            <figcaption> APPLICATION </figcaption>
+                        </figure>
+                    </a>
+
+                </li>
+                <li>
+                    <a href="/quiz">
+                        <figure>
+                            <img src="{{ url_for('static',filename='quiz.png') }}" alt="" style="height: 100px;">
+                            <figcaption style="padding-left: 40px;"> QUIZ</figcaption>
+                        </figure>
+                    </a>
+
+                </li>
+                <li>
+                    <a href="/ref">
+                        <figure>
+                            <img src="{{ url_for('static',filename='reference.png') }}" alt="" id="end" style="height: 100px;">
+                            <figcaption style="padding-left: 40px;">REFERENCES </figcaption>
+                        </figure>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+</body>
+
+</html>

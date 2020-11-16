@@ -1,0 +1,106 @@
+body {
+  background-color: powderblue;
+}
+#head {
+
+  color:white;
+  size: 15px;
+  align-self: start;
+  background-color: teal;
+  padding-left: 10px;
+  padding-top: 0;
+}
+
+nav {
+  float: left;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav li {
+  display: inline-block;
+  margin-left: 23px;
+  padding-top: 23px;
+  align-self: center;
+  position: relative;
+}
+
+#end{
+  display: inline-block;
+  margin-left: 20px;
+  padding-right: 50px;
+
+
+  position: relative;
+}
+
+nav a {
+  color: #444;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+nav a:hover {
+  color: #000;
+}
+
+nav a::before {
+  content: '';
+  display: block;
+  height: 5px;
+  background-color: #444;
+
+  position: absolute;
+  top: 0;
+  width: 0%;
+
+  transition: all ease-in-out 250ms;
+}
+
+nav a:hover::before {
+  width: 100%;
+}
+
+h1 {
+  padding-left: 60px;
+  padding-top: 10px;
+
+}
+
+
+#nor {
+  font-size: x-large;
+  padding-left: 60px;
+  padding-right: 40px;
+  line-height: 140%;
+}
+ul li p {
+  font-size: x-large;
+}
+
+#u li {
+  font-size: x-large;
+  padding-left: 0;
+  padding-right: 40px;
+  line-height: 140%;
+}
+.centre{
+  text-align: center;
+  padding-top: 10px;
+}
+
+#sub {
+   float : right;
+   padding-left: 100px;
+   background-color: rgb(128, 77, 0);
+}
+#bar{
+  line-height: 0%;
+  padding-right: 1%;
+  font-size: 40px;
+}
