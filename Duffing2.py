@@ -10,7 +10,7 @@ import matplotlib.animation as animation
 
 alpha = -1      # -1
 beta = 1         # 1
-delta = 0.3       # 0.3
+delta = 0.3      # 0.3
 gam = 0.15    # 0.15
 w = 1
 def flow_deriv(x_y_z,tspan):
@@ -46,13 +46,13 @@ def duffing(alpha,beta,gam,delta,w):
     plt.figure(2)
     lines = plt.plot(y1[1:2000],y2[1:2000],'ko',ms=1)
     plt.setp(lines, linewidth=0.5)
-    plt.xlabel("x label ")
-    plt.ylabel("y label ")
+    plt.xlabel("x(t)")
+    plt.ylabel("v(t)")
     plt.savefig('static/lines.png')
     fig = plt.figure()
     ims = []
     l = 10
-    for cloop in range(0,l):
+    for cloop in range(l):
         phase = np.pi*cloop/l
         repnum = 5000
         px = np.zeros(shape=(2*repnum,))
@@ -69,8 +69,8 @@ def duffing(alpha,beta,gam,delta,w):
                 last = testwt[loop]
             else:
                 last = testwt[loop]
-        plt.xlabel("x label ")
-        plt.ylabel("y label ")
+        plt.xlabel("x(t)")
+        plt.ylabel("v(t)")
         lines = plt.plot(xvar,px,'bo',ms=1)
         ims.append(lines)
 

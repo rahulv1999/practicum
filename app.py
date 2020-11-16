@@ -27,8 +27,8 @@ def obj():
 def obj_gif():
     alpha = float(request.form.get("alpha1"))/1    # -1
     beta = float(request.form.get("beta1"))/1         # 1
-    delta = float(request.form.get("gamma1"))/1      # 0.3
-    gam = float(request.form.get("delta1"))/1   # 0.15
+    delta = float(request.form.get("delta1"))/1      # 0.3
+    gam = float(request.form.get("gamma1"))/1   # 0.15
     w = float(request.form.get("w1"))/1
     duffing(alpha,beta,delta,gam,w)
     data = f" α : {alpha} ,β : {beta} ,γ : {gam} ,δ : {delta}, ω : {w}"
