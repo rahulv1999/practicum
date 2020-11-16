@@ -1,1 +1,1 @@
-web: gunicorn --workers=3 app:app --timeout INT --log-file -
+web: gunicorn --workers=3 app:app -t INT, --timeout INT --log-file -
