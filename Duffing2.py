@@ -51,7 +51,7 @@ def duffing(alpha,beta,gam,delta,w):
     plt.savefig('static/lines.png')
     fig = plt.figure()
     ims = []
-    l = 6
+    l = 10
     for cloop in range(0,l):
         phase = np.pi*cloop/l
         repnum = 5000
