@@ -10,7 +10,8 @@
 </head>
 
 <body>
-    <div w3-include-HTML=/></div>
+    <div w3-include-HTML= />
+    </div>
     <script type="text/javascript" src={{ url_for('static', filename='w3-include-HTML.js') }}></script>
     <div style="padding-top: 150px;">
         <br><br><br>
@@ -50,20 +51,89 @@
                             When there is no resistance proportional to the velocity (γ = 0), the Duffing equation can
                             be integrated upon multiplication by the velocity:
                         </p>
-                        <img src="{{ url_for('static',filename='duff2-removebg-preview.png') }}" alt="" style="padding-left: 400px;">
+                        <img src="{{ url_for('static',filename='duff2-removebg-preview.png') }}" alt=""
+                            style="padding-left: 400px;">
                         <p id="nor">Integrating the above equation yields:</p>
-                        <img src="{{ url_for('static',filename='duff3-removebg-preview.png') }}" alt="" style="padding-left: 400px;">
+                        <img src="{{ url_for('static',filename='duff3-removebg-preview.png') }}" alt=""
+                            style="padding-left: 400px;">
 
                         <p id="nor">
                             The function in brackets given is called Hamiltonian for the duffing equation.
                         </p>
-                        <img src="{{ url_for('static',filename='duff4-removebg-preview.png') }}" alt="" style="padding-left: 400px;">
+                        <img src="{{ url_for('static',filename='duff4-removebg-preview.png') }}" alt=""
+                            style="padding-left: 400px;">
                         <p id="nor" style="padding-left: 300px;">Where, </p>
-                        <img src="{{ url_for('static',filename='duff-2-removebg-preview.png') }}" alt="" style="padding-left: 400px;">
+                        <img src="{{ url_for('static',filename='duff-2-removebg-preview.png') }}" alt=""
+                            style="padding-left: 400px;">
                         <p id="nor">The most general forced form of the Duffing equation is </p>
-                        <img src="{{ url_for('static',filename='duff-1-removebg-preview.png') }}" alt="" style="padding-left: 330px;">
+                        <img src="{{ url_for('static',filename='duff-1-removebg-preview.png') }}" alt=""
+                            style="padding-left: 330px;">
                         <p id="nor">The Duffing oscillator describes the motion of a classical particle in a double well
                             potential</p>
+                        <p id="nor">Chaotic Systems:</p>
+                        <p id="nor">The main idea of chaos theory is that a minor difference at the start of a process
+                            can make a major change in it as time progresses. The dynamical systems of interest in chaos
+                            studies are nonlinear </p>
+                        <p id="nor">For example, if you start with your stereo at low volume and turn the volume control
+                            one
+                            unit, the volume increases by one unit. If you now turn the control two units, the volume
+                            increases two units. This is an example of a linear response. In a nonlinear system, linear
+                            superposition fails and a system need not change proportionally to the change in a variable.
+                            If you turn your volume control too far, the volume may not only increase more than the
+                            number of units of the turn, but whistles and various other distortions occur in the sound.
+                            These are examples of a nonlinear response. </p>
+                        <p style="text-align: center;">
+                            <img src="{{ url_for('static',filename='Picture1.png')}}" alt="equation">
+                        </p>
+                        <p id="nor">This equation can be characterized as a second order, nonlinear oscillator with
+                            constant
+                            coefficients. Each term and/or parameter in this more general equation can be understood in
+                            the following way:
+                        <p>
+                        <ul style="padding-left: 100px;">
+                            <li>
+                                <p id = "nor" style="padding-left: 0px;">There is periodic external forcing that comes from the term γ cos(ωt). The parameter
+                                    γ
+                                    is the strength of the driving force and ω is the frequency of forcing.</p>
+                            </li>
+                            <li>
+                                <p id = "nor" style="padding-left: 0px;">
+                                    The term αx is a classical restoring force that follows Hooke’s Law (where α is a
+                                    linear
+                                    “stiffness” term that is equivalent to a classical spring constant). Meanwhile, the
+                                    term
+                                    βx3 represents a cubic restoring force that controls the nonlinear response of the
+                                    system. This often leads to an increase in the “stiffness” of the spring since it
+                                    deviates from classical harmonic motion.
+                                </p>
+                            </li>
+                            <li>
+                                <p id = "nor" style="padding-left: 0px;">
+                                    The term δx˙, δ ≥ 0, represents linear damping in the mass-spring system. (The term
+                                    ˙x
+                                    is the velocity of the system.)
+                                </p>
+                            </li>
+                        </ul>
+                </p>
+                <p id="nor">
+                    γ represents the strength of the external driving force of the nonlinear system. Increases the
+                    driving force will push the system from deterministic dynamics to chaotic dynamics that cannot be
+                    predicted exactly. Investigating the behaviour of the system as γ increases yields interesting
+                    results that are made most clear if we study both the beginning and ending behaviour of each
+                    solution obtained for various values of γ.
+                </p>
+                <figure style="text-align: center;">
+                    <img src="{{url_for('static',filename='graph.png')}}" alt="graph">
+                    <figcaption> <p id = "nor" style="line-height: 0%;">α : -1.0 ,β : 1.0 ,γ : 0.1 ,δ : 0.1, ω : 1.4</p></figcaption>
+                </figure>
+                <br><br>
+                <figure style="text-align: center;">
+                    <img src="{{url_for('static',filename='graph2.png')}}" alt="graph2">
+                    <figcaption><p id = "nor" style="line-height: 0%;">
+                        α : -1.0 ,β : 1.0 ,γ : 0.35 ,δ : 0.1, ω : 1.4
+                    </p></figcaption>
+                </figure>
 
 
     </div>

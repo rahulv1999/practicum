@@ -44,7 +44,12 @@ def proc():
 
 @app.route('/quiz')
 def quiz():
-    return render_template('quiz.html')
+    return render_template('quiz.html',ans = '')
+
+@app.route('/ans',methods=['POST'])
+def ans():
+    ans = """1.a,   2.b,  3.c,  4.a,  5.a"""
+    return render_template('quiz.html',ans = ans)
 @app.route('/ref')
 def ref():
     return render_template('ref.html')
