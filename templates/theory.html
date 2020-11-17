@@ -92,12 +92,13 @@
                         <p>
                         <ul style="padding-left: 100px;">
                             <li>
-                                <p id = "nor" style="padding-left: 0px;">There is periodic external forcing that comes from the term γ cos(ωt). The parameter
+                                <p id="nor" style="padding-left: 0px;">There is periodic external forcing that comes
+                                    from the term γ cos(ωt). The parameter
                                     γ
                                     is the strength of the driving force and ω is the frequency of forcing.</p>
                             </li>
                             <li>
-                                <p id = "nor" style="padding-left: 0px;">
+                                <p id="nor" style="padding-left: 0px;">
                                     The term αx is a classical restoring force that follows Hooke’s Law (where α is a
                                     linear
                                     “stiffness” term that is equivalent to a classical spring constant). Meanwhile, the
@@ -108,7 +109,7 @@
                                 </p>
                             </li>
                             <li>
-                                <p id = "nor" style="padding-left: 0px;">
+                                <p id="nor" style="padding-left: 0px;">
                                     The term δx˙, δ ≥ 0, represents linear damping in the mass-spring system. (The term
                                     ˙x
                                     is the velocity of the system.)
@@ -125,16 +126,34 @@
                 </p>
                 <figure style="text-align: center;">
                     <img src="{{url_for('static',filename='graph.png')}}" alt="graph">
-                    <figcaption> <p id = "nor" style="line-height: 0%;">α : -1.0 ,β : 1.0 ,γ : 0.1 ,δ : 0.1, ω : 1.4</p></figcaption>
+                    <figcaption>
+                        <p id="nor" style="line-height: 0%;">α : -1.0, β : 1.0, γ : 0.1, δ : 0.1, ω : 1.4</p>
+                        <p style="line-height: 30%;">Source : Simulation,Duffing Oscillator VLAB </p>
+                    </figcaption>
                 </figure>
                 <br><br>
                 <figure style="text-align: center;">
                     <img src="{{url_for('static',filename='graph2.png')}}" alt="graph2">
-                    <figcaption><p id = "nor" style="line-height: 0%;">
-                        α : -1.0 ,β : 1.0 ,γ : 0.35 ,δ : 0.1, ω : 1.4
-                    </p></figcaption>
+                    <figcaption>
+                        <p id="nor" style="line-height: 0%;">α : -1.0, β : 1.0, γ : 0.35, δ : 0.1, ω : 1.4</p>
+                        <p  style="line-height: 30%;">Source : Simulation,Duffing Oscillator VLAB </p>
+                    </figcaption>
                 </figure>
+                <p id="nor">
+                    After changing the values of γ incrementally, we came to find that as γ increases more than 0.35, we
+                    see that the system has transitioned from the phase space where bifurcation occurs into a region of
+                    chaos. This does not allow for the system to eventually reach a stable, fixed behaviour but instead
+                    the solutions continue to move through the phase-space in an unpredictable fashion.
+                </p>
 
+                <p id="nor">
+                    Thus, we can say that due to energy conservation, that the Duffing Equation is unable to exhibit
+                    chaos when the oscillator is undamped and unforced (that is, δ = γ = 0). To allow for chaos, energy
+                    conservation is eliminated by including both a damping and an external forcing term. Then we see, as
+                    the magnitude of external forcing is increased, the system moves through a region of period-doubling
+                    bifurcations and then transitions to a chaotic regime. The transition to chaos appears to occur
+                    around γ = 0.35
+                </p>
 
     </div>
 
