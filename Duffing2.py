@@ -10,9 +10,9 @@ import matplotlib.animation as animation
 
 alpha = -1      # -1
 beta = 1         # 1
-delta = 0.3      # 0.3
-gam = 0.15    # 0.15
-w = 1
+delta = 0.15      # 0.3
+gam = 0.388    # 0.15
+w = 1.4
 def flow_deriv(x_y_z,tspan):
     x, y, z = x_y_z
     a = y
@@ -30,7 +30,6 @@ def duffing(alpha,beta,gam,delta,w):
     # xp1 = 1
 
     x_y_z = [xp1, px1, w1]
-
     # Settle-down Solve for the trajectories
     t = np.linspace(0, 2000, 40000)
     x_t = integrate.odeint(flow_deriv, x_y_z, t)
@@ -79,4 +78,3 @@ def duffing(alpha,beta,gam,delta,w):
     ani = animation.ArtistAnimation(fig, ims, interval=120, blit=True,
                                     repeat_delay=1000)
     ani.save('static/dynamic_images.gif', writer='imagemagick')
-
