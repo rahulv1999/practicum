@@ -26,6 +26,8 @@ def duffing(alpha,beta,gam,delta,w):
     px1 = np.random.rand(1)
     xp1 = np.random.rand(1)
     w1 = 0
+    # px1 = 1
+    # xp1 = 1
 
     x_y_z = [xp1, px1, w1]
 
