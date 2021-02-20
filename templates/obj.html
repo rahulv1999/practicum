@@ -4,82 +4,91 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href={{ url_for('static', filename='style.css') }}>
+    <link rel="stylesheet" href={{ url_for('static', filename='style.css' ) }}>
     <title>VLAB</title>
 </head>
 
 <body>
     <div w3-include-HTML= />
     </div>
-    <script src={{ url_for('static', filename='w3-include-HTML.js') }}></script>
-    <div style="padding-top: 150px;">
-        <br><br><br>
-        <h1 style="text-align: center;padding-top: 0px;">SIMULATIONS</h1>
-        <hr style="height: 1px;color: #000; opacity: 1;background-color: black;width:92%;">
-        <div >
-            <p id="nor">
-                Enter/Select the folowing values and press submit.
-                 Note : Loading may take time, do not refresh.
-            </p>
-            <div >
-                <form action="/obj_gif" method="post" target="_blank" >
-                    <script>function alpha_fn(val) {
-                            document.getElementById('alpha').value = val / 100.0;
-                        }</script>
-                    <script>function beta_fn(val) {
-                            document.getElementById('beta').value = val / 100.0;
-                        }</script>
-                    <script>function gamma_fn(val) {
-                            document.getElementById('gamma').value = val / 100.0;
-                        }</script>
-                    <script>function delta_fn(val) {
-                            document.getElementById('delta').value = val / 100.0;
-                        }</script>
-                    <script>function w_fn(val) {
-                            document.getElementById('w').value = val / 100.0;
-                        }</script>
-                    <div style="float: left;padding: 40px;padding-top: 10px;">
-                        <p id="bar" style="font-size: 40p">α</p>
-                        <input type="range" min="-500" max="500" value="-500" class="slider"  name="alpha"
-                            onchange="alpha_fn(this.value);" style="float: left;">
-                        <input type="text" id="alpha" name ="alpha1" value="" style="width: 40px;background-color: transparent;">
+    <script src={{ url_for('static', filename='w3-include-HTML.js' ) }}></script>
+    <div style="padding-top: 260px;">
+            <br><br><br>
+            <h1 style="text-align: center;padding-top: 0px;">SIMULATIONS</h1>
+            <hr style="height: 1px;color: #000; opacity: 1;background-color: black;width:92%;">
+            <div>
+                <p id="nor">
+                    Enter/Select the folowing values and press submit.
+                    Note : Loading may take time, do not refresh.
+                </p>
+                <div>
+                    <form action="/obj_gif" method="post" target="_blank">
+                        <script>function alpha_fn(val) {
+                                document.getElementById('alpha').value = val / 100.0;
+                            }</script>
+                        <script>function beta_fn(val) {
+                                document.getElementById('beta').value = val / 100.0;
+                            }</script>
+                        <script>function gamma_fn(val) {
+                                document.getElementById('gamma').value = val / 100.0;
+                            }</script>
+                        <script>function delta_fn(val) {
+                                document.getElementById('delta').value = val / 100.0;
+                            }</script>
+                        <script>function w_fn(val) {
+                                document.getElementById('w').value = val / 100.0;
+                            }</script>
+                        <div style="float: left;padding: 40px;padding-top: 10px;">
+                            <p id="bar" style="font-size: 40p">α</p>
+                            <input type="range" min="-500" max="500" value="-500" class="slider" name="alpha"
+                                onchange="alpha_fn(this.value);" style="float: left;">
+                            <input type="text" id="alpha" name="alpha1" value=""
+                                style="width: 40px;background-color: transparent;">
+                        </div>
+                        <div style="float: left;padding: 40px;padding-top: 10px;">
+                            <p id="bar">β</p>
+                            <input type="range" min="-500" max="100" value="-500" class="slider" name="beta"
+                                onchange="beta_fn(this.value);">
+                            <input type="text" id="beta" value="" name="beta1"
+                                style="width: 40px;background-color: transparent;"">
                     </div>
-                    <div style="float: left;padding: 40px;padding-top: 10px;">
-                        <p id="bar">β</p>
-                        <input type="range" min="-500" max="100" value="-500" class="slider" name="beta"
-                            onchange="beta_fn(this.value);">
-                        <input type="text" id="beta" value="" name ="beta1" style="width: 40px;background-color: transparent;"">
-                    </div>
-                    <div style="float: right;padding: 40px;padding-top: 10px;">
-                        <p id="bar">γ</p>
-                        <input type="range" min="0" max="100" value="0" class="slider" name="gamma"
-                            onchange="gamma_fn(this.value);">
-                        <input type="text" id="gamma" value="" name ="gamma1"style="width: 40px;background-color: transparent;">
+                    <div style=" float: right;padding: 40px;padding-top: 10px;">
+                            <p id="bar">γ</p>
+                            <input type="range" min="0" max="100" value="0" class="slider" name="gamma"
+                                onchange="gamma_fn(this.value);">
+                            <input type="text" id="gamma" value="" name="gamma1"
+                                style="width: 40px;background-color: transparent;">
 
-                    </div>
-                    <div style="float: right;padding: 40px;padding-top: 10px;">
-                        <p id=bar>δ</p>
-                        <input type="range" min="0" max="100" value="0" class="slider" name="delta"
-                            onchange="delta_fn(this.value);">
-                        <input type="text" id="delta" value="" name ="delta1"style="width: 40px;background-color: transparent;">
-                    </div>
+                        </div>
+                        <div style="float: right;padding: 40px;padding-top: 10px;">
+                            <p id=bar>δ</p>
+                            <input type="range" min="0" max="100" value="0" class="slider" name="delta"
+                                onchange="delta_fn(this.value);">
+                            <input type="text" id="delta" value="" name="delta1"
+                                style="width: 40px;background-color: transparent;">
+                        </div>
 
-                    <div style="padding: 40px;padding-left: 100px;padding-top: 10px;">
-                        <p id="bar">ω</p>
-                        <input type="range" min="0" max="500" value="0" class="slider" name="w"
-                            onchange="w_fn(this.value);">
-                        <input type="text" id="w" value="" name ="w1" style="width: 40px;background-color: transparent;">
-                    </div>
+                        <div style="padding: 40px;padding-left: 100px;padding-top: 10px;">
+                            <p id="bar">ω</p>
+                            <input type="range" min="0" max="500" value="0" class="slider" name="w"
+                                onchange="w_fn(this.value);">
+                            <input type="text" id="w" value="" name="w1"
+                                style="width: 40px;background-color: transparent;">
+                        </div>
 
-                    <div style ="padding: 15px">
-                        <p style="text-align: center;">
-                            <button type="submit" " style="height: 50px;width: 200px;border: 1px solid #eee;
-                            border-radius: 20px;box-shadow: 5px 5px 5px #eee;text-shadow:none;background: lawngreen;">Submit</button>
-                        </p>
-                    </div>
-                </form>
+                        <div style="padding: 15px">
+                            <p style="text-align: center;">
+                                <button type="submit" " style=" height: 50px;width: 200px;border: 1px solid #eee;
+                                    border-radius: 20px;box-shadow: 5px 5px 5px #eee;text-shadow:none;background:
+                                    lawngreen;">Submit</button>
+                            </p>
+                        </div>
+                    </form>
+                </div>
+
             </div>
-        </div>
+
+    </div>
 
 </body>
 

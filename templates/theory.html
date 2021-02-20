@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href={{ url_for('static', filename='style.css') }}>
+    <link rel="stylesheet" href={{ url_for('static', filename='style.css' ) }}>
     <title>VLAB</title>
 
 </head>
@@ -12,144 +12,280 @@
 <body>
     <div w3-include-HTML= />
     </div>
-    <script type="text/javascript" src={{ url_for('static', filename='w3-include-HTML.js') }}></script>
-    <div style="padding-top: 150px;">
-        <br><br><br>
-        <h1 style="text-align: center;padding-top: 0px;">DUFFING OSCILLATOR</h1>
-        <hr style="height: 1px;color: #000; opacity: 1;background-color: black;width:92%;">
-        <p id="nor">
-            The Duffing oscillator is one of the prototype systems of nonlinear dynamics. It first became popular for
-            studying anharmonic oscillations and, later, chaotic nonlinear dynamics in the wake of early studies by the
-            engineer Georg Duffing.
-        </p>
-        <p id="nor">
-            The duffing system has been successfully used to model a variety of physical processes such as stiffening
-            springs, beam buckling, nonlinear electronic circuits, superconducting Josephson parametric amplifiers, and
-            ionization waves in plasmas.
-        </p>
-        <p id="nor">
-            Nowadays, the term "Duffing equation" is used for any equation that describes an oscillator that has a cubic
-            stiffness term, regardless of the type of damping or excitation.
-        </p>
-        <p id="nor">
-            <img src="{{ url_for('static',filename='duff-removebg-preview.png') }}" alt="" style="padding-left: 450px;">
-        </p>
-        <p id="nor">
-             The above equation can display chaotic behaviour. For ω<sub>o</sub>²>0, the Duffing oscillator can be
-            interpreted as a
-            forced oscillator with a spring whose restoring force is written as F = - ω<sub>o</sub>²x - βx<sup>3</sup>.
-            When β>0,
-            this
-            equation represents a "hard spring," and for &nbsp;&nbsp; β < 0 ,it represents a "soft spring" . </p>
+    <script type="text/javascript" src={{ url_for('static', filename='w3-include-HTML.js' ) }}></script>
+    <div style="padding-top: 260px;">
+        <page size="A3">
+            <br><br><br>
+            <h1 style="text-align: center;padding-top: 0px;">DUFFING OSCILLATOR</h1>
+            <hr style="height: 1px;color: #000; opacity: 1;background-color: black;width:92%;">
+            <p id="nor">
+                The Duffing oscillator is one of the prototype systems of nonlinear dynamics. It first became popular
+                for
+                studying anharmonic oscillations and, later, chaotic nonlinear dynamics in the wake of early studies by
+                the
+                engineer Georg Duffing.
+            </p>
+            <p id="nor">
+                The duffing system has been successfully used to model a variety of physical processes such as
+                stiffening
+                springs, beam buckling, nonlinear electronic circuits, superconducting Josephson parametric amplifiers,
+                and
+                ionization waves in plasmas.
+            </p>
+            <p id="nor">
+                Nowadays, the term "Duffing equation" is used for any equation that describes an oscillator that has a
+                cubic
+                stiffness term, regardless of the type of damping or excitation.
+            </p>
+            <p id="nor">
 
-                <p id="nor">
-                    For ω<sub>o</sub>² < 0 (so ω0 is pure imaginary), the Duffing oscillator describes the dynamics of a
-                        point mass in a double well potential, and it can be regarded as a model of a periodically
-                        forced steel beam which is deflected toward the two magnets. It is known that chaotic motions
-                        can be observed in this case. </p>
-                        <p id="nor">
-                            When there is no resistance proportional to the velocity (γ = 0), the Duffing equation can
-                            be integrated upon multiplication by the velocity:
-                        </p>
-                        <img src="{{ url_for('static',filename='duff2-removebg-preview.png') }}" alt=""
-                            style="padding-left: 400px;">
-                        <p id="nor">Integrating the above equation yields:</p>
-                        <img src="{{ url_for('static',filename='duff3-removebg-preview.png') }}" alt=""
-                            style="padding-left: 400px;">
+            <figure style="text-align: center;">
+                <img src="{{ url_for('static',filename='duff-removebg-preview.png') }}" alt="">
+            </figure>
+            </p>
+            <p id="nor">
+                 The above equation can display chaotic behaviour. For ω<sub>o</sub>²>0, the Duffing oscillator can be
+                interpreted as a
+                forced oscillator with a spring whose restoring force is written as F = - ω<sub>o</sub>²x -
+                βx<sup>3</sup>.
+                When β>0,
+                this
+                equation represents a "hard spring," and for &nbsp;&nbsp; β < 0 ,it represents a "soft spring" . </p>
 
-                        <p id="nor">
-                            The function in brackets given is called Hamiltonian for the duffing equation.
-                        </p>
-                        <img src="{{ url_for('static',filename='duff4-removebg-preview.png') }}" alt=""
-                            style="padding-left: 400px;">
-                        <p id="nor" style="padding-left: 300px;">Where, </p>
-                        <img src="{{ url_for('static',filename='duff-2-removebg-preview.png') }}" alt=""
-                            style="padding-left: 400px;">
-                        <p id="nor"><b>Chaotic Systems:</b></p>
-                        <p id="nor">The main idea of chaos theory is that a minor difference at the start of a process
-                            can make a major change in it as time progresses. The dynamical systems of interest in chaos
-                            studies are nonlinear </p>
-                        <p id="nor">For example, if you start with your stereo at low volume and turn the volume control
-                            one
-                            unit, the volume increases by one unit. If you now turn the control two units, the volume
-                            increases two units. This is an example of a linear response. In a nonlinear system, linear
-                            superposition fails and a system need not change proportionally to the change in a variable.
-                            If you turn your volume control too far, the volume may not only increase more than the
-                            number of units of the turn, but whistles and various other distortions occur in the sound.
-                            These are examples of a nonlinear response. </p>
-                        <p style="text-align: center;">
-                            <img src="{{ url_for('static',filename='Picture1.png')}}" alt="equation">
-                        </p>
-                        <p id="nor">This equation can be characterized as a second order, nonlinear oscillator with
-                            constant
-                            coefficients. Each term and/or parameter in this more general equation can be understood in
-                            the following way:
-                        <p>
-                        <ul style="padding-left: 100px;">
-                            <li>
-                                <p id="nor" style="padding-left: 0px;">There is periodic external forcing that comes
-                                    from the term γ cos(ωt). The parameter
-                                    γ
-                                    is the strength of the driving force and ω is the frequency of forcing.</p>
-                            </li>
-                            <li>
-                                <p id="nor" style="padding-left: 0px;">
-                                    The term αx is a classical restoring force that follows Hooke’s Law (where α is a
-                                    linear
-                                    “stiffness” term that is equivalent to a classical spring constant). Meanwhile, the
-                                    term
-                                    βx3 represents a cubic restoring force that controls the nonlinear response of the
-                                    system. This often leads to an increase in the “stiffness” of the spring since it
-                                    deviates from classical harmonic motion.
-                                </p>
-                            </li>
-                            <li>
-                                <p id="nor" style="padding-left: 0px;">
-                                    The term δx˙, δ ≥ 0, represents linear damping in the mass-spring system. (The term
-                                    ˙x
-                                    is the velocity of the system.)
-                                </p>
-                            </li>
-                        </ul>
-                </p>
-                <p id="nor">
-                    γ represents the strength of the external driving force of the nonlinear system. Increases the
-                    driving force will push the system from deterministic dynamics to chaotic dynamics that cannot be
-                    predicted exactly. Investigating the behaviour of the system as γ increases yields interesting
-                    results that are made most clear if we study both the beginning and ending behaviour of each
-                    solution obtained for various values of γ.
-                </p>
+                    <p id="nor">
+                        For ω<sub>o</sub>² < 0 (so ω0 is pure imaginary), the Duffing oscillator describes the dynamics
+                            of a point mass in a double well potential, and it can be regarded as a model of a
+                            periodically forced steel beam which is deflected toward the two magnets. It is known that
+                            chaotic motions can be observed in this case. </p>
+                            <p id="nor">
+                                When there is no resistance proportional to the velocity (γ = 0), the Duffing equation
+                                can
+                                be integrated upon multiplication by the velocity:
+                            </p>
+                            <figure style="text-align: center;">
+                                <img src="{{ url_for('static',filename='duff2-removebg-preview.png') }}" alt="">
+                            </figure>
+                            <p id="nor">Integrating the above equation yields:</p>
+                            <figure style="text-align: center;">
+                                <img src="{{ url_for('static',filename='duff3-removebg-preview.png') }}" alt="">
+                            </figure>
+
+                            <p id="nor">
+                                The function in brackets given is called Hamiltonian for the duffing equation.
+                            </p>
+
+                            <figure style="text-align: center;">
+                                <img src="{{ url_for('static',filename='duff4-removebg-preview.png') }}" alt="">
+                            </figure>
+
+                            <p id="nor" style="padding-left: 300px;">Where, </p>
+                            <figure style="text-align: center;">
+                                <img src="{{ url_for('static',filename='duff-2-removebg-preview.png') }}" alt="">
+                            </figure>
+                            <p id="nor"><b>Chaotic Systems:</b></p>
+                            <p id="nor">The main idea of chaos theory is that a minor difference at the start of a
+                                process
+                                can make a major change in it as time progresses. The dynamical systems of interest in
+                                chaos
+                                studies are nonlinear </p>
+                            <p id="nor">For example, if you start with your stereo at low volume and turn the volume
+                                control
+                                one
+                                unit, the volume increases by one unit. If you now turn the control two units, the
+                                volume
+                                increases two units. This is an example of a linear response. In a nonlinear system,
+                                linear
+                                superposition fails and a system need not change proportionally to the change in a
+                                variable.
+                                If you turn your volume control too far, the volume may not only increase more than the
+                                number of units of the turn, but whistles and various other distortions occur in the
+                                sound.
+                                These are examples of a nonlinear response. </p>
+                            <p style="text-align: center;">
+                                <img src="{{ url_for('static',filename='Picture1.png')}}" alt="equation">
+                            </p>
+                            <p id="nor">This equation can be characterized as a second order, nonlinear oscillator with
+                                constant
+                                coefficients. Each term and/or parameter in this more general equation can be understood
+                                in
+                                the following way:
+                            <p>
+                            <ul style="padding-left: 100px;">
+                                <li>
+                                    <p id="nor" style="padding-left: 0px;">There is periodic external forcing that comes
+                                        from the term γ cos(ωt). The parameter
+                                        γ
+                                        is the strength of the driving force and ω is the frequency of forcing.</p>
+                                </li>
+                                <li>
+                                    <p id="nor" style="padding-left: 0px;">
+                                        The term αx is a classical restoring force that follows Hooke’s Law (where α is
+                                        a
+                                        linear
+                                        “stiffness” term that is equivalent to a classical spring constant). Meanwhile,
+                                        the
+                                        term
+                                        βx3 represents a cubic restoring force that controls the nonlinear response of
+                                        the
+                                        system. This often leads to an increase in the “stiffness” of the spring since
+                                        it
+                                        deviates from classical harmonic motion.
+                                    </p>
+                                </li>
+                                <li>
+                                    <p id="nor" style="padding-left: 0px;">
+                                        The term δx˙, δ ≥ 0, represents linear damping in the mass-spring system. (The
+                                        term
+                                        ˙x
+                                        is the velocity of the system.)
+                                    </p>
+                                </li>
+                            </ul>
+                    </p>
+                    <p id="nor">
+                        γ represents the strength of the external driving force of the nonlinear system. Increases the
+                        driving force will push the system from deterministic dynamics to chaotic dynamics that cannot
+                        be
+                        predicted exactly. Investigating the behaviour of the system as γ increases yields interesting
+                        results that are made most clear if we study both the beginning and ending behaviour of each
+                        solution obtained for various values of γ.
+                    </p>
+                    <figure style="text-align: center;">
+                        <img src="{{url_for('static',filename='graph.png')}}" alt="graph">
+                        <figcaption>
+                            <p id="nor" style="line-height: 0%;">α : -1.0, β : 1.0, γ : 0.1, δ : 0.1, ω : 1.4</p>
+                            <p style="line-height: 30%;">Source : Simulation,Duffing Oscillator VLAB </p>
+                        </figcaption>
+                    </figure>
+                    <br><br>
+                    <figure style="text-align: center;">
+                        <img src="{{url_for('static',filename='graph2.png')}}" alt="graph2">
+                        <figcaption>
+                            <p id="nor" style="line-height: 0%;">α : -1.0, β : 1.0, γ : 0.35, δ : 0.1, ω : 1.4</p>
+                            <p style="line-height: 30%;">Source : Simulation,Duffing Oscillator VLAB </p>
+                        </figcaption>
+                    </figure>
+                    <p id="nor">
+                        After changing the values of γ incrementally, we came to find that as γ increases more than
+                        0.35, we
+                        see that the system has transitioned from the phase space where bifurcation occurs into a region
+                        of
+                        chaos. This does not allow for the system to eventually reach a stable, fixed behaviour but
+                        instead
+                        the solutions continue to move through the phase-space in an unpredictable fashion.
+                    </p>
+
+                    <p id="nor">
+                        Thus, we can say that due to energy conservation, that the Duffing Equation is unable to exhibit
+                        chaos when the oscillator is undamped and unforced (that is, δ = γ = 0). To allow for chaos,
+                        energy
+                        conservation is eliminated by including both a damping and an external forcing term. Then we
+                        see, as
+                        the magnitude of external forcing is increased, the system moves through a region of
+                        period-doubling
+                        bifurcations and then transitions to a chaotic regime. The transition to chaos appears to occur
+                        around γ = 0.35
+                    </p>
+
+                    <p id="nor"><b>Resonance:</b></p>
+                    <p id="nor">
+                        Nonlinear effects may significantly modify the shape of the resonance curves of harmonic
+                        oscillators. First of all, the resonance frequency is shifted from its "natural" value according
+                        to
+                        the formula:
+
+                    <figure style="text-align: center;">
+                        <img src="{{url_for('static',filename='resonance 1.png')}}" alt="graph2">
+                    </figure>
+
+            </p>
+
+            <p id="nor">
+                where A is the oscillation amplitude and  is a constant defined by the anharmonic coefficients.
+                Second, the shape of the resonance curve is distorted <b>(fold over effect)</b>. When the amplitude of
+                the
+                (sinusoidal) external force reaches a critical value instabilities appear. The critical value is
+                given by the formula: <br>
+            <figure style="text-align: center;">
+                <img src="{{url_for('static',filename='resonance 2.png')}}" alt="graph2">
+            </figure>
+
+            <figure style="text-align: center;">
+                <img src="{{url_for('static',filename='fold_over.png')}}" alt="graph2" style="width:80%">
+                <figcaption>
+                    <p id="nor" style="line-height: 0%;">Fold-Over Effect</p>
+                </figcaption>
+            </figure>
+            </p>
+
+            <p id="nor"><b>Frequency Response</b></p>
+            <p id="nor">
+                The forced Duffing oscillator with cubic nonlinearity is described by the following ordinary
+                differential equation:
+
+            <figure style="text-align: center;">
+                <img src="{{url_for('static',filename='frequency_response.png')}}" alt="graph2">
+            </figure>
+            </p>
+
+            <p id="nor">
+                The frequency response of this oscillator describes the amplitude of steady state response of the
+                equation at a given frequency of excitation For a linear oscillator with   the frequency response is
+                also linear. However, for a nonzero cubic coefficient, the frequency response becomes nonlinear.
+                Depending on the type of nonlinearity, the Duffing oscillator can show hardening, softening or mixed
+                hardening–softening frequency response.
+
+            <figure style="text-align: center;">
+                <img src="{{url_for('static',filename='frequency_response_chart.png')}}" alt="graph2">
+            </figure>
+            </p>
+
+            <p id="nor"><b>Jump Phenomena:</b></p>
+
+            <p id="nor">
+                For certain ranges of the parameters in the Duffing equation, the frequency response may no longer
+                be a single-valued function of forcing frequency  For a hardening spring oscillator :
+            </p>
+
+            <p id="nor">
+                <I>(α > 0 and large enough postive β > β<sub>c+</sub> > 0 )</I>
+                the frequency response overhangs to the high-frequency side, and to the low-frequency side for the
+                softening spring oscillator
+                <I>(α > 0 and β < β<sub>c-</sub>
+                        < 0 )</I>
+                            The lower overhanging side is unstable – i.e. the dashed-line parts in the figures of the
+                            frequency
+                            response – and cannot be realized for a sustained time. Consequently, the jump phenomenon
+                            shows up:
+            </p>
+            <ul style="padding-left: 120px;">
+                <li id="nor" style="padding-left: 0px;">
+                    <p>
+                        when the angular frequency is slowly increased (with other parameters fixed), the
+                        response amplitude drops at A suddenly to B,
+                    </p>
+                </li>
+                <li id="nor" style="padding-left: 0px;">
+                    <p>
+                        if the frequency  is slowly decreased, then at C the amplitude jumps up to D, thereafter
+                        following the upper branch of the frequency response.
+                    </p>
+                </li>
+
                 <figure style="text-align: center;">
-                    <img src="{{url_for('static',filename='graph.png')}}" alt="graph">
+                    <img src="{{url_for('static',filename='jump chart.png')}}" alt="graph2" style="size: 150%;">
                     <figcaption>
-                        <p id="nor" style="line-height: 0%;">α : -1.0, β : 1.0, γ : 0.1, δ : 0.1, ω : 1.4</p>
-                        <p style="line-height: 30%;">Source : Simulation,Duffing Oscillator VLAB </p>
+                        <p id="nor" style="line-height: 0%;"> Duffing Applications in Mechanical engineering</p>
                     </figcaption>
                 </figure>
-                <br><br>
-                <figure style="text-align: center;">
-                    <img src="{{url_for('static',filename='graph2.png')}}" alt="graph2">
-                    <figcaption>
-                        <p id="nor" style="line-height: 0%;">α : -1.0, β : 1.0, γ : 0.35, δ : 0.1, ω : 1.4</p>
-                        <p  style="line-height: 30%;">Source : Simulation,Duffing Oscillator VLAB </p>
-                    </figcaption>
-                </figure>
-                <p id="nor">
-                    After changing the values of γ incrementally, we came to find that as γ increases more than 0.35, we
-                    see that the system has transitioned from the phase space where bifurcation occurs into a region of
-                    chaos. This does not allow for the system to eventually reach a stable, fixed behaviour but instead
-                    the solutions continue to move through the phase-space in an unpredictable fashion.
-                </p>
 
-                <p id="nor">
-                    Thus, we can say that due to energy conservation, that the Duffing Equation is unable to exhibit
-                    chaos when the oscillator is undamped and unforced (that is, δ = γ = 0). To allow for chaos, energy
-                    conservation is eliminated by including both a damping and an external forcing term. Then we see, as
-                    the magnitude of external forcing is increased, the system moves through a region of period-doubling
-                    bifurcations and then transitions to a chaotic regime. The transition to chaos appears to occur
-                    around γ = 0.35
-                </p>
+            </ul>
 
+
+         <br><br><br><br>
+
+
+        </page>
     </div>
 
 </body>

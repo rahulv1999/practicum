@@ -4,79 +4,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href={{ url_for('static', filename='style.css') }}>
+    <link rel="stylesheet" href={{ url_for('static', filename='style.css' ) }}>
     <title>VLAB</title>
 </head>
 
 <body>
     <div w3-include-HTML= />
     </div>
-    <script src={{ url_for('static', filename='w3-include-HTML.js') }}></script>
-    <div style="padding-top: 150px;">
+    <script src={{ url_for('static', filename='w3-include-HTML.js' ) }}></script>
+    <div style="padding-top: 170px;">
         <br><br><br>
-        <h1 style="text-align: center;padding-top: 0px;">QUIZ</h1>
-        <hr style="height: 1px;color: #000; opacity: 1;background-color: black;width:92%;">
     </div>
     <div>
-        <p id="nor">
-        <ol style="font-size: x-large;">
-            <li> <b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Which term in the duffing equation control the amount of damping.</b>
-                <ol type="a">
-                    <li>α</li>
-                    <li>β</li>
-                    <li>γ</li>
-                    <li>δ</li>
-                </ol>
-            </li>
-            <br>
-            <li>
-                <ol type="a">
-                    <b>How can we reduce the number of parameters in a duffing equation</b>
-                    <li>By scaling</li>
-                    <li>By integrating</li>
-                    <li>By approximating</li>
-                    <li>None</li>
-                </ol>
-            </li>
-            <br>
-            <li>
-                <ol type="a">
-                    <b>How can we differentiate hardening and softening spring</b>
-                    <li>On the basis of alpha</li>
-                    <li>On the basis of beta</li>
-                    <li>On the basis of both alpha and beta</li>
-                    <li>None </li>
-                </ol>
-            </li>
-            <br>
-            <li>
-                <ol type="a">
-                    <b>Another name for duffing oscillator</b>
-                    <li>Chaotic Van Der Pol oscillator</li>
-                    <li>Chaotic simple oscillator</li>
-                    <li>Both of them</li>
-                    <li>None</li>
-                </ol>
-            </li>
-            <br>
-            <li>
+        <figure style="text-align: center;">
+            <iframe
+            src="https://docs.google.com/forms/d/e/1FAIpQLScg4R4MZ3Q4ECuohHBrHygueisJ8--Qjl3YuqPsYB4q4Ug9Dw/viewform?embedded=true"
+            width="800" height="1600" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
 
-                <ol type="a">
-                    <b>Name the scientist after whom duffing oscillator or duffing equation was given</b>
-                    <li>George Duffing</li>
-                    <li>Michael Duffing</li>
-                    <li>Elbert Einstein</li>
-                    <li>James watt</li>
-                </ol>
-            </li>
-        </ol>
-        </p>
-        <form action="/ans" method="post">
-            <button type="submit">Check Answer</button>
-            </form>
-        <p id = "nor">
-            {{ans}}
-        </p>
+        </figure>
 
     </div>
 </body>

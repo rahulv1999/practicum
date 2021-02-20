@@ -23,8 +23,8 @@ def flow_deriv(x_y_z,tspan):
 def duffing(alpha,beta,gam,delta,w):
     # plt.close('all')
     T = 2*np.pi/w
-    px1 = np.random.rand(1)
-    xp1 = np.random.rand(1)
+    px1 = 0.61601253
+    xp1 = 0.47345912  #np.random.rand(1)
     w1 = 0
     # px1 = 1
     # xp1 = 1
